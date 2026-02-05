@@ -9,12 +9,13 @@ import random
 from datetime import timedelta
 import hashlib
 
-# Configuration de la connexion MySQL
+# Configuration de la connexion MySQL (Authentification Windows)
 DB_CONFIG = {
     'host': 'localhost',
-    'user': 'root',
-    'password': 'root',  # Modifier selon votre configuration
-    'database': 'ReservationVoyage'
+    'user': '',  # Laisser vide pour l'authentification Windows
+    'password': '',  # Laisser vide pour l'authentification Windows
+    'database': 'ReservationVoyage',
+    'auth_plugin': 'authentication_windows_client'
 }
 
 # Liste de destinations populaires
